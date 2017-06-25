@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html ng-app="personalWebsite">
 <head>
 	<!--Angular scripts-->
 	<link href="./node_modules/angular-material/angular-material.css" rel="stylesheet" />
@@ -16,20 +16,47 @@
 	<!--Stylesheets-->
 	<link rel = "stylesheet" type = "text/css" href = "main.css"/>
 </head>
-	<body ng-controller = "MainController">
+	<body ng-controller = "MainController" ng-app = "PersonalWebsit">
 	<ul>
-  		<li><a href="">Home</a></li>
+  		<li><a href="">Top</a></li>
   		<li><a href="">Projects</a></li>
   		<li><a href="">About</a></li>
   		<li><a href="">Contact</a></li>
 
 	</ul>
 	<div id="particles-js">
-		<md-button class="md-raised">Button</md-button>
+		<md-button class="md-raised md-primary"> About me </md-button>
 	</div>
-		<section>
-			<p>Hi</p>
+	<div id = "personal-info">
+		<section id = "Projects">
+			<p>Projects</p>
+		</section>
+		<section id = "About">
+			<p>About:</p>
+			<p>StackOverflow: 
+				<a href="https://stackoverflow.com/users/6232148/johndoe"> 
+					https://stackoverflow.com/users/6232148/johndoe
+				</a> 
+			</p>
+			<p> GitHub: 
+				<a href="https://github.com/raguiar2">https://github.com/raguiar2</a> </p>
+			<p> Linkedin: 
+				<a href="https://www.linkedin.com/in/rui-aguiar-473b01101/">https://www.linkedin.com/in/rui-aguiar-473b01101/
+				</a>
+			</p>
 		</section>
 
+		<section id = "Contact">
+			<p>Contact me: </p>
+			<ng-form>
+			<label>Message: </label>
+			<input type="text" ng-model="message">
+			</ng-form>
+
+		</section>
+		</div>
+
 	</body>
+
 </html>
+

@@ -4,24 +4,41 @@ body {
   margin: 0;
   font:normal 75% Arial, Helvetica, sans-serif;
 }
-.md-button.md-raised:not([disabled]) {
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-}
+
 
 canvas {
   display: block;
   vertical-align: bottom;
 }
+
+#personal-info{
+    background-color: #05386B;
+}
 /* ---- particles.js container ---- */
 
+p {
+  color: white;
+}
 #particles-js {
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: #b61924;
+  background-color: #5CDB95;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+label { 
+  color: white;
 }
 
 
