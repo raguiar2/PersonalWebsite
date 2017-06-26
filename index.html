@@ -25,14 +25,19 @@
 
 	</ul>
 	<div id="particles-js">
-		<md-button class="md-raised md-primary"> About me </md-button>
+		<md-button class="md-raised" id = "about_button"> About me </md-button>
 	</div>
 	<div id = "personal-info">
 		<section id = "Projects">
-			<p>Projects</p>
+			<p class = "section_header">Projects</p>
 		</section>
 		<section id = "About">
-			<p>About:</p>
+			<p class = "section_header">About</p>
+			</p>
+		</section>
+		<section id = "Links">
+			<p class = "section_header">Links</p>
+			<div class = "centered_text">
 			<p>StackOverflow: 
 				<a href="https://stackoverflow.com/users/6232148/johndoe"> 
 					https://stackoverflow.com/users/6232148/johndoe
@@ -44,15 +49,21 @@
 				<a href="https://www.linkedin.com/in/rui-aguiar-473b01101/">https://www.linkedin.com/in/rui-aguiar-473b01101/
 				</a>
 			</p>
+			</div>
 		</section>
 
 		<section id = "Contact">
-			<p>Contact me: </p>
-			<ng-form>
-			<label>Message: </label>
-			<input type="text" ng-model="message">
-			</ng-form>
+				<p class = "section_header" >Contact me</p>
+				<div class = "centered_items">
+				<ng-form>
 
+					<textarea class="longInput" cols="30" rows="10"  ng-model="message"  id = "contact_box"></textarea>
+					<!--<input type="text" ng-model="message" id = "contact_box">-->
+				</ng-form>
+				</div > 
+				<div class = "centered_items">
+					<md-button class = "md-raised" id = "contact_button" ng-click = "sendMessage()"> Send </md-button>
+				</div>
 		</section>
 		</div>
 

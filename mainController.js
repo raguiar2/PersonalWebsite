@@ -21,9 +21,14 @@ var personalWebsite = angular.module('personalWebsite', ['ngRoute', 'ngMaterial'
 //     }
 // ]);
 
-personalWebsite.controller('MainController', ['$scope', '$rootScope', '$location', '$routeParams', '$resource', '$http',
-	function($scope, $rootScope, $location, $routeParams, $resource, $http) {
-        console.log("HERE")
+personalWebsite.controller('MainController', ['$scope', '$location', '$resource',
+	function($scope, $location, $resource) {
+    console.log("HERE")
+    $scope.sendMessage = function(){
+		console.log($scope.message);
+	}
+
 	}]);
+
 
 

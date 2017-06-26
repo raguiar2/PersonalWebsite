@@ -3,6 +3,7 @@
 body {
   margin: 0;
   font:normal 75% Arial, Helvetica, sans-serif;
+
 }
 
 
@@ -65,4 +66,35 @@ li a {
 /* Change the link color to #111 (black) on hover */
 li a:hover {
     background-color: #111;
+}
+
+.section_header{
+  font-size: 40px;
+  text-align: center;
+}
+
+.centered_text { 
+  text-align: center;
+}
+
+#about_button{
+  background-color: #05386B;
+  color: white;
+  vertical-align: center;
+}
+
+#contact_button{
+  background-color: #5CDB95;
+}
+
+.centered_items{
+  display: flex;
+  justify-content: center; /* center horizontally */
+}
+
+#contact_box{
+    border: 2px solid #5CDB95;
+    border-radius: 4px;
+    height:200px;
+    font-size:14pt;
 }
