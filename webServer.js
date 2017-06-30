@@ -3,6 +3,8 @@
 var mongoose = require('mongoose');
 var session = require('express-session');
 var express = require('express');
+var smoothScroll = require('smoothscroll');
+
 var app = express();
 
 

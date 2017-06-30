@@ -7,28 +7,12 @@ var personalWebsite = angular.module('personalWebsite', ['ngRoute', 'ngMaterial'
         .accentPalette('orange');
 });
 
-// personalWebsite.config(['$routeProvider', '$resourceProvider',
-//     function($routeProvider) {
-//         $routeProvider.
-//         when('/', {
-//             title: 'Home',
-//             templateUrl: 'index.html',
-//             controller: 'MainController.js'
-//         }).
-//         otherwise({
-//             redirectTo: '/'
-//         });
-//     }
-// ]);
-
 personalWebsite.controller('MainController', ['$scope', '$location', '$resource',
 	function($scope, $location, $resource) {
-    console.log("HERE")
     $scope.sendMessage = function(){
-		console.log($scope.message);
+		window.open('mailto:raguiar1000@gmail.com?subject=subject&body='+$scope.message);
 	}
-
-	}]);
+}]);
 
 
 
