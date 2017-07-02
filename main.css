@@ -47,6 +47,7 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+
 }
 
 li {
@@ -102,6 +103,15 @@ li a:hover {
     height:200px;
     font-size:14pt;
 }
+
+.cvbox{
+    border: 2px solid white;
+    border-radius: 4px;
+    font-size:14pt;
+    display: inline-block;
+    padding: 2px;
+}
+
 #particles_info{
   height: 300px;
   width: 300px;
@@ -112,3 +122,14 @@ li a:hover {
   text-align: center;
   top: 50%;
 }
+
+.projectslist{
+  display: block;
+}
+
+#projectli{
+      float: left;
+    clear: left;
+}
+
+
