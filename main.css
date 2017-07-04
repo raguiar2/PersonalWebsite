@@ -1,4 +1,4 @@
-/* ---- reset ---- */
+ /* ---- reset ---- */
 
 body {
   margin: 0;
@@ -25,7 +25,6 @@ canvas {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-  text-align: center;
 }
 
 a {
@@ -46,13 +45,12 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
-
 }
 
 li {
     float: left;
 }
+
 
 li a {
     display: block;
@@ -62,6 +60,9 @@ li a {
     text-decoration: none;
 }
 
+#linksbar{
+  background: #333;
+}
 /* Change the link color to #111 (black) on hover */
 li a:hover {
     background-color: #111;
@@ -86,6 +87,7 @@ li a:hover {
   background-color: #05386B;
   color: white;
   vertical-align: center;
+  margin: auto;
 }
 
 #contact_button{
@@ -107,29 +109,57 @@ li a:hover {
 .cvbox{
     border: 2px solid white;
     border-radius: 4px;
-    font-size:14pt;
+    font-size:20pt;
     display: inline-block;
     padding: 2px;
 }
 
 #particles_info{
-  height: 300px;
   width: 300px;
   position: absolute;
   background: rgba(0,0,0,.5);
-  /*Centering Method 2*/  margin: -150px 0 0 -150px;
+  margin: -150px 0 0 -150px;
   left: 50%;
-  text-align: center;
   top: 50%;
+  text-align: center;
 }
 
 .projectslist{
-  display: block;
+  display: table;
+  margin: 0 auto;
 }
 
 #projectli{
-      float: left;
+    float: right;
     clear: left;
+      padding-left: 30px;
+
+}
+.paddingdiv{
+  padding: 10px;
+  background: #05386B;
+}
+.projectdescription{
+  width: 250px;
+  word-wrap: break-word;
+  font-size: 14px;
+  text-align: center;
+  margin: auto;
+
+}
+
+.thumbnail{
+  border: 1px solid #ddd; /* Gray border */
+    border-radius: 4px;  /* Rounded border */
+    padding: 5px; /* Some padding */
+    width: 30px; /* Set a small width */
+    margin: 3px;
+    opacity: .2;
+
+}
+
+.thumbnail:hover{
+  opacity: 1;   
 }
 
 
