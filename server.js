@@ -17,7 +17,7 @@ app.get('/', function(request, response) {
     response.send('Simple web server of files from ' + __dirname);
 });
 
-var server = app.listen(5000, function() {
+var server = app.listen((process.env.PORT || 5000), function() {
     var port = server.address().port;
     console.log('Listening at http://localhost:' + port + ' exporting the directory ' + __dirname);
 });
